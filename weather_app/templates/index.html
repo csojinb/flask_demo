@@ -1,10 +1,12 @@
 <html>
     <body>
-        <form method="post">
+        <form method="POST">
             <h3>Enter location information to get current weather conditions:</h3>
 
-            <input type="text" placeholder="Zip Code"/>
+            <input type="text" placeholder="Zip Code" name='zip_code'/>
             <input type="submit" value="Submit" />
+
+            <p> {{ location }} </p>
         </form>
     </body>
 </html>
