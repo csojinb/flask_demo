@@ -1,10 +1,15 @@
 <html>
     <body>
-        <form method="POST">
+        <form method="POST" action="/weather/">
             <h3>Enter location information to get current weather conditions:</h3>
 
-            <input type="text" placeholder="Zip Code" name='zip_code'/>
+            <!-- <input type="text" placeholder="Zip Code" name='zip_code'/> -->
+
+            {% for field in form %}
+            {{ field(placeholder=field.description['placeholder']) }}
+            {% endfor %}
             <input type="submit" value="Submit" />
+
 
         </form>
     </body>
