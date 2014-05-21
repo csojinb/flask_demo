@@ -1,15 +1,27 @@
+<style>
+span.error {
+    color:red;
+
+}
+</style>
+
 <html>
     <body>
         <form method="POST" action="/weather/">
             <h3>Enter location information to get current weather conditions:</h3>
 
-            <!-- <input type="text" placeholder="Zip Code" name='zip_code'/> -->
 
             {% for field in form %}
-            {{ field(placeholder=field.description['placeholder']) }}
+                {{ field(placeholder=field.description['placeholder']) }}
+                {% if field.errors %}
+                    {% for error in field.errors %}
+                        <span class="error"> {{ error }} </span>
+                    {% endfor %}
+                {% endif %}
             {% endfor %}
-            <input type="submit" value="Submit" />
-
+            <p>
+                <input type="submit" value="Submit" />
+            </p>
 
         </form>
     </body>
