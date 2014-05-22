@@ -1,5 +1,16 @@
 <html>
     <body>
-        <h3> Weather for {{ location }}. </h3>
+        <h3> Weather for {{ weather.full_location }}: </h3>
+        <span>
+            <img src= "{{ weather.icon_url }}"
+                alt = "{{ weather.description }}" >
+            {{ weather.description }}
+        </span>
+        <div style="margin-top: 5cm">
+        <img src="http://icons.wxug.com/logos/JPG/wundergroundLogo_4c_horz.jpg" height="42"
+        alt="Weather data from wunderground.com">
+        </div>
+        <p><a href="{{ back_link }}"> Back </a></p>
     </body>
 </html>
+
