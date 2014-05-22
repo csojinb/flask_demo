@@ -1,7 +1,6 @@
 <style>
 span.error {
     color:red;
-
 }
 </style>
 
@@ -9,7 +8,6 @@ span.error {
     <body>
         <form method="POST" action="/weather/">
             <h3>Enter location information to get current weather conditions:</h3>
-
 
             {% for field in form %}
                 {{ field(placeholder=field.description['placeholder']) }}
