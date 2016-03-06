@@ -3,7 +3,7 @@
 Prepared for the 2014 Code for Progress fellowship program, by [Clara Bennett](https://github.com/csojinb) and [Emily Williamson](https://github.com/districtem)
 
 ### Overview
-This tutorial goes through building a simple weather application using Python and Flask. You can follow it by starting at the beginning of the git history and checking out successive commits that begin with "CHECKPOINT".
+This tutorial goes through building a simple weather application using Python and Flask. You can follow along by running the `git checkout` command at the beginning of each slide in [the tutorial](tutorial.md).
 
 ### Installing the Requirements
 
