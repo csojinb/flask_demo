@@ -1,6 +1,9 @@
-## flask_demo
+## Flask Demo & Tutorial
 ==========
-prepared for the 2014 Code for Progress fellowship program
+Prepared for the 2014 Code for Progress fellowship program, by [Clara Bennett](https://github.com/csojinb) and [Emily Williamson](https://github.com/districtem)
+
+### Overview
+This tutorial goes through building a simple weather application using Python and Flask. You can follow it by starting at the beginning of the git history and checking out successive commits that begin with "CHECKPOINT".
 
 ### Requirements
 
